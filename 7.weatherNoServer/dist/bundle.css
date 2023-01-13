@@ -1,0 +1,98 @@
+/*!**************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles.css ***!
+  \**************************************************************/
+#body {
+  background-color: rgb(247, 237, 224);
+  font-family: sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cards {
+  display: grid;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background: rgba(30, 26, 19, 0.5);
+  color: rgb(228, 222, 213);
+  backdrop-filter: blur(10px);
+
+  border-radius: 10px;
+}
+
+.msg {
+  color: rgb(245, 4, 84);
+  margin-bottom: 3em;
+  text-align: center;
+}
+.forecast {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 2em;
+}
+.weather-title {
+  font-size: 3rem;
+  margin: 0;
+}
+.weather-temp {
+  font-size: 4rem;
+  margin: 0;
+}
+.desc {
+  font-size: 1.2rem;
+}
+.desc-forecast {
+  font-size: 1rem;
+}
+.weather-title-forecast {
+  font-size: 1rem;
+}
+.weather-temp-forecast {
+  font-size: 2rem;
+}
+.search-form {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#search {
+  border: none;
+  border-radius: 50px;
+  padding: 1em;
+  font-size: 1.2rem;
+  color: rgba(241, 4, 103, 0.5);
+}
+#search:hover,
+#search:focus {
+  border: rgba(241, 4, 103, 0.3);
+  color: rgba(241, 4, 103, 0.6);
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(241, 4, 103, 0.6);
+  opacity: 1; /* Firefox */
+}
+.main-title {
+  background: rgba(241, 4, 103, 0.5);
+  backdrop-filter: blur(10px);
+  color: white;
+  width: 8em;
+  padding: 0.5em;
+  border-radius: 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+.forecast-title {
+  background-color: white;
+  color: rgba(241, 4, 103, 0.5);
+}
+

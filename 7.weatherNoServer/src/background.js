@@ -17,13 +17,19 @@ export default async function fetchBackground(searchTerm) {
   let imageArrayBackup = dataBackup.hits;
 
   let backgroundBackup = imageArrayBackup[random];
-  console.log(background);
-  console.log(backgroundBackup);
-  if (background.imageURL !== undefined) {
+  console.log("image from URLmain:",background);
+  console.log("image from URL:", backgroundBackup);
+  try {
     body.style.background = `url(${background.imageURL})`;
-  } else {
+  } catch (error) {
     body.style.background = `url(${backgroundBackup.imageURL})`;
+    console.log(error);
   }
+  //   if (background.imageURL !== undefined) {
+  //     body.style.background = `url(${background.imageURL})`;
+  //   } else {
+  //     body.style.background = `url(${backgroundBackup.imageURL})`;
+  //   }
 
   body.style.backgroundPosition = "center";
   body.style.backgroundRepeat = "no-repeat";
