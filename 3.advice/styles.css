@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(to top left, rgb(247, 151, 151), rgb(210, 227, 250)
+  );
+  font-family: sans-serif;
+  color: rgb(88, 85, 85);
+  background-attachment: fixed;
+}
+span {
+  font-size: 3rem;
+  font-weight: 700;
+}
+p {
+  font-size: 1.6rem;
+}
+.search {
+  display: flex;
+  justify-content: center;
+}
+input {
+  width: 30vw;
+  padding: 1em;
+  margin-bottom: 2em;
+  border: none;
+  border-radius: 20px;
+}
+.cards {
+  max-width: 42em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.card {
+  margin-bottom: 1em;
+  background-color: #ffffff24;
+  border-radius: 30px;
+  padding: 2em;
+  backdrop-filter: blur(20px);
+  transform: 1s;
+  transition-timing-function: ease-in-out;
+  width: 100%;
+  cursor: pointer;
+}

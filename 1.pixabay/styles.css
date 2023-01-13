@@ -1,0 +1,198 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(
+    to top right,
+    rgb(234, 200, 200),
+    rgb(175, 175, 214)
+  );
+  background-attachment: fixed;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  padding: 0 2em;
+  margin: 2em auto;
+}
+
+.card {
+  margin-bottom: 1em;
+  background-color: #ffffff24;
+  border-radius: 30px;
+  padding: 2em;
+
+  backdrop-filter: blur(20px);
+
+  transform: 1s;
+  transition-timing-function: ease-in-out;
+  height: 330px;
+  cursor: pointer;
+}
+.info {
+  display: grid;
+  padding: 0.6em 0;
+  color: rgb(79, 79, 80);
+}
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  grid-column: 1 / span 3;
+  padding-bottom: 0.5em;
+}
+.user {
+  display: inline;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.img:hover {
+  transform: translate(0, -1rem);
+}
+
+.img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline;
+}
+.searchForm {
+  display: flex;
+  justify-content: center;
+  margin: 3em auto 3em;
+}
+#search {
+  padding: 1em;
+  border: none;
+  border-radius: 20px;
+  width: 30vw;
+}
+
+.img-modal {
+  height: 80vh;
+  object-fit: cover;
+}
+.img-modal:hover {
+  transform: none;
+}
+.card-modal {
+  background-color: #ffffff24;
+  border-radius: 30px;
+  padding: 2em;
+
+  backdrop-filter: blur(20px);
+
+  transform: 1s;
+  transition-timing-function: ease-in-out;
+  width: 80vw;
+
+  cursor: pointer;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.card-modal {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closeBtn {
+  color: #aaa;
+  position: absolute;
+  top: 0;
+  font-size: 28px;
+  font-weight: bold;
+  border: 2px solid red;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* pagination */
+
+.page-btn {
+  background: #ddd;
+  color: #2c303a;
+  height: 35px;
+  border-radius: 2px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: 0.3s ease;
+  margin: 0 2px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+
+.page-btn.active {
+  background: rgb(122, 122, 206);
+  color: #fff;
+}
+.page-btn[disabled] {
+  opacity: 0.3;
+}
+.page-btn:hover {
+  background: rgb(174, 174, 197);
+}
+.list-page {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+.next,
+.prev {
+  font-size: small;
+}

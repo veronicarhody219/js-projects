@@ -1,0 +1,20 @@
+.car-container{
+    margin-top: 15em;
+}
+.car {
+  height: 100px;
+  width: 200px;
+  margin: 2em 1em;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.msg{
+    color: rgb(215, 2, 37);
+}
