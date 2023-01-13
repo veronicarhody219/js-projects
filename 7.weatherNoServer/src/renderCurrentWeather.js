@@ -1,6 +1,7 @@
 const cards = document.querySelector(".cards");
 export default async function renderData(data) {
   let weatherData = data.weather[0];
+  console.log(weatherData.icon)
   let template = "";
   template += `
       <div class="card">
