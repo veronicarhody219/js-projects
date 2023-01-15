@@ -5,7 +5,7 @@ export default async function renderData(data) {
   let template = "";
   template += `
       <div class="card">
-        <h3 class="weather-title">${data.name}</h3>
+        <h3 class="weather-title">${data.name}, ${data.sys.country}</h3>
         <img
           src="http://openweathermap.org/img/wn/${weatherData.icon}@2x.png"
           alt="weather icon"
