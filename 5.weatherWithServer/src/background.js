@@ -7,10 +7,10 @@ export default async function fetchBackground(searchTerm) {
   let URL = `http://localhost:8888/background/`;
 
   const res = await fetch(URLmain);
+  console.log(URLmain)
   const data = await res.json();
   let random = Math.floor(Math.random() * 20);
   let background = data[random];
-
 
   const resBackup = await fetch(URL);
   const dataBackup = await resBackup.json();
@@ -23,7 +23,6 @@ export default async function fetchBackground(searchTerm) {
     body.style.background = `url(${backgroundBackup.imageURL})`;
     console.log(error);
   }
-
 
   body.style.backgroundPosition = "center";
   body.style.backgroundRepeat = "no-repeat";

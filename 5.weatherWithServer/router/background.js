@@ -13,8 +13,10 @@ router.get("/", async (req, res) => {
 });
 
 const fetchBackground = async (searchText) => {
-  let urlMain = `https://pixabay.com/api/?key=${process.env.PIXABAY_API_KEY}&q=encodeURIComponent(${searchText})`;
-
+  let urlMain = `https://pixabay.com/api/?key=${
+    process.env.PIXABAY_API_KEY
+  }&q=${encodeURIComponent(searchText)}`;
+  console.log(urlMain);
   try {
     const resBackground = await axios.get(urlMain);
     const dataBackground = resBackground.data.hits;

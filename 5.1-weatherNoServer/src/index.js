@@ -1,7 +1,7 @@
 import fetchData from "./fetchTerm.js";
 import fetchDataLatLon from "./fetchLatLon.js";
 import fetchBackground from "./background.js";
-import "../styles.css";
+// import "../styles.css";
 
 window.addEventListener("DOMContentLoaded", App());
 
