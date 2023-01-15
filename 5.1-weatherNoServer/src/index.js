@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", App());
 
 async function App() {
   const searchForm = document.querySelector(".search-form");
-  fetchBackground();
+  // fetchBackground();
   searchForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     let searchTerm = searchForm.search.value;
